@@ -1,11 +1,11 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+
 module.exports = {
   mode: 'development',
   entry: {
     index: './src/index.js',
-    app: './src/index.js',
   },
   devtool: 'inline-source-map',
   devServer: {
@@ -26,15 +26,11 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        use: ["style-loader", "css-loader"],
       },
     ],
   },
   optimization: {
     runtimeChunk: 'single',
-  },
+  }
 };
