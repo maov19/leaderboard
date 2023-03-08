@@ -1,64 +1,64 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #container {
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
 }
 
 h1 {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 #left-column {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    margin-right: 5rem;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-right: 5rem;
 }
 
 #right-column {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
 }
 
-#recent-scores-title, #add-score-title {
-    margin: 0 0 2rem 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.5rem;
-    height: 1.5rem;
+#recent-scores-title,
+#add-score-title {
+  margin: 0 0 2rem 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  height: 1.5rem;
 }
 
 button {
-    border: solid black;
-    
+  border: solid black;
 }
 
 #recent-scores {
-    border: solid black;
-    list-style-type: none;
+  border: solid black;
+  list-style-type: none;
 }
 
-form {  
-    display: flex;
-    flex-direction: column;
-    row-gap: 5vh;
-    height: 40vh;
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5vh;
+  height: 40vh;
 }
 
 input {
-    border: solid black;
+  border: solid black;
 }
 
 #submit-button {
-    width: 30%;
-    align-self: flex-end;
+  width: 30%;
+  align-self: flex-end;
 }
