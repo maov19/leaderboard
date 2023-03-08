@@ -12,20 +12,16 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -76,18 +72,15 @@ Clone this [repository](https://github.com/maov19/leaderboard) to your desired f
 
 ### Install
 
-No installation required.
+The following npm packages are required for the project to run:
+
+- webpack
+- css-loader
+- webpack live server
 
 ### Usage
 
 To run the project, open index.html in any web browser.
-
-### Run tests
-
-To run tests, open index.html in any web browser.
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
@@ -128,12 +121,6 @@ If you like this project give a ⭐️.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 Credits to Microverse and my coding partners for the support.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
