@@ -7,33 +7,28 @@
     <title>Leaderboard</title>
 </head>
 <body>
-    <nav>
-        <h1>A Web Page</h1>
-        <p>arrow left</p>
-        <p>arrow right</p>
-        <p>x symbol</p>
-        <p>home symbol</p>
-        <input type="text" name="insert" id="insert html">
-        <input type="text" name="searchbar" id="searchbar">
-    </nav>
     <h1>Leaderboard</h1>
-    <div>
-        <h2>Recent scores</h2>
-        <button>Refresh</button>
-        <ul>
-            <li>name: 100</li>
-            <li>name: 100</li>
-            <li>name: 100</li>
-            <li>name: 100</li>
-            <li>name: 100</li>
-        </ul>
-    </div>
-    <form action="submit">
-        <h2>Add your score</h2>
-        <input type="text" placeholder="Your name here">
-        <input type="text" placeholder="Your score">
-        <button>Submit</button>
-    </form>
-    
+    <section id="container">
+        <div id="left-column">
+            <div id="recent-scores-title">
+                <h2>Recent scores</h2>
+                <button>Refresh</button>
+            </div>
+                <ul id="recent-scores">
+                    <li>name: 100</li>
+                    <li>name: 100</li>
+                </ul>
+        </div>
+        <div id="right-column">
+            <div id="add-score-title">
+                <h2>Add your score</h2>
+            </div>
+                <form action="submit">
+                    <input type="text" placeholder="Your name here">
+                    <input type="text" placeholder="Your score">
+                <button id="submit-button">Submit</button>
+                </form>
+        </div>
+    </section>
 </body>
 </html>
