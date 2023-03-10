@@ -2,8 +2,8 @@ const submitScores = async (url, user, score) => {
   await fetch(url, {
     method: 'POST',
     body: JSON.stringify({
-      user: user,
-      score: score,
+      user,
+      score,
     }),
     headers: {
       'content-type': 'application/json; charset=UTF-8',
@@ -11,7 +11,7 @@ const submitScores = async (url, user, score) => {
   })
     .then((response) => {
       response.json();
-    })
+    });
 };
 
 export default submitScores;
