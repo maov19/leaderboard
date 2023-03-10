@@ -10,7 +10,7 @@ body {
 
 h1 {
   font-size: 4rem;
-  margin-left: 2rem;
+  margin: 2rem 0 5rem 2rem;
 }
 
 #left-column {
@@ -28,7 +28,7 @@ h1 {
 
 #recent-scores-title,
 #add-score-title {
-  margin: 0 0 2rem 0;
+  margin: 0 0 3rem 0;
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -39,13 +39,47 @@ h1 {
   height: 1.5rem;
 }
 
-button {
+/* button {
   display: flex;
-  border: solid black;
+  width: 10re;
+  background-color: black;
+  color: white;
+  border-radius: 0.5rem;
+  border: none black;
   font-size: 1.5rem;
-  padding: 0.5rem;
-  justify-content: center;
+  padding: 1rem;
+  justify-content: center; 
+} */
+
+
+.ripple {
+  background-position: center;
+  transition: background 0.7s;
 }
+.ripple:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+.ripple:active {
+  background-color: #4c5155;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+/* Button style */
+button {
+  border: none;
+  border-radius: 1rem;
+  padding: 12px 18px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+  background-color: #2196f3;
+  box-shadow: 0 0 4px #999;
+  outline: none;
+}
+
+
 
 #recent-scores {
   border: solid black;
