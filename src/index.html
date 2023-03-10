@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/arcade-classic?styles=6541" rel="stylesheet">
     <title>Leaderboard</title>
 </head>
 <body>
@@ -12,7 +13,9 @@
         <div id="left-column">
             <div id="recent-scores-title">
                 <h2>Recent scores</h2>
-                <button id="refresh">Refresh</button>
+                <div class="retro">
+                    <button id="refresh">Refresh</button>
+                </div>
             </div>
                 <ul id="recent-scores">
                 </ul>
@@ -22,9 +25,11 @@
                 <h2>Add your score</h2>
             </div>
                 <form>
-                    <input type="text" name='name' placeholder="Your name here">
-                    <input type="text" name='score' placeholder="Your score">
-                <button id="submit-button">Submit</button>
+                    <input type="text" name='name' placeholder="name" class="blink_me ">
+                    <input type="text" name='score' placeholder="score" class="blink_me ">
+                    <div class="retro submit-button">   
+                        <button id="submit-button">Submit</button>
+                    </div>
                 </form>
         </div>
     </section>
