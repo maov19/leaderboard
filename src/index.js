@@ -1,19 +1,25 @@
-// TBD - 4. Implement the "Refresh" button that will get all scores for a game created by you from the API (receiving data from the API and parsing the JSON).
-// 5. Implement the form "Submit" button that will save a score for a game created by you (sending data to the API).
-// 6. Use arrow functions instead of the function keyword.
-// 7. Use async and await JavaScript features to consume the API.import './styles.css';
+import display from './display.js';
+import submitScores from './submit.js';
+import './styles.css';
 
-import css from './styles.css';
-
-const recentScores = document.getElementById('recent-scores');
 const refresh = document.getElementById('refresh');
+const form = document.querySelector('form');
+const submit = document.getElementById('submit-button');
 
-const singleScore = document.createElement('li');
-singleScore.innerHTML = (`<li>name: 100</li><li>name: 100</li>
-`);
-recentScores.appendChild(singleScore);
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/gJ44VvuQ2xiMriWT8nkA/scores';
 
 refresh.addEventListener('click', () => {
-    //get info from the api
-    //display it on the webpage
-})
+  display(url);
+});
+
+submit.addEventListener('click', (e) => {
+  e.preventDefault();
+  const name = form.name.value;
+  const score = form.score.value;
+  submitScores(url, name, score);
+  form.reset();
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  display(url);
+});
