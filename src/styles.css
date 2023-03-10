@@ -1,5 +1,7 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'ArcadeClassic', sans-serif;
+  color: green;
+  background-color: black;
 }
 
 #container {
@@ -10,14 +12,15 @@ body {
 
 h1 {
   font-size: 4rem;
-  margin-left: 2rem;
+  font-weight: 300;
+  margin: 2rem 0 5rem 2rem;
 }
 
 #left-column {
   display: flex;
   flex-direction: column;
   width: 40%;
-  margin: 0 5rem 0 5rem;
+  margin: 0 8rem 0 5rem;
 }
 
 #right-column {
@@ -28,28 +31,91 @@ h1 {
 
 #recent-scores-title,
 #add-score-title {
-  margin: 0 0 2rem 0;
+  margin: 0 0 3rem 0;
   padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  align-content: center;
   font-size: 2rem;
   height: 1.5rem;
+  font-weight: 400;
 }
 
+h2 {
+  margin-bottom: 1rem;
+}
+
+.blink_me {
+  animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Button style */
 button {
-  display: flex;
-  border: solid black;
-  font-size: 1.5rem;
   padding: 0.5rem;
+  align-items: center;
   justify-content: center;
+  background: none;
+  font-family: 'ArcadeClassic', sans-serif;
+  color: black;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.retro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  width: auto;
+  font-size: 1rem;
+  line-height: 1.5;
+  background: grey;
+  font-weight: 400;
+  border: 1px solid black !important;
+  border-radius: 0;
+  box-shadow: 3px 3px black, 5px 5px white;
+  padding-right: 5%;
+  margin-top: 20px;
+}
+
+.retro:hover {
+  color: grey;
+  background: darkgray;
+}
+
+.retro:active {
+  background-color: darkslategray !important;
+  color: black !important;
+  box-shadow: 0 0 white;
+  transform: translateX(5px) translateY(2px);
 }
 
 #recent-scores {
-  border: solid black;
+  padding: 0;
   list-style-type: none;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+
+  /* padding: 0.1rem; */
+  font-size: 2.5em;
+  color: yellow;
 }
 
 form {
@@ -60,11 +126,31 @@ form {
 }
 
 input {
-  border: solid black;
-  height: 2rem;
+  height: 3rem;
+  background-color: black;
+  border: none;
 }
 
-#submit-button {
-  width: 30%;
-  align-self: flex-end;
+input::placeholder {
+  font-family: 'ArcadeClassic', sans-serif;
+  color: green;
+  background-color: black;
+  font-size: 2rem;
+}
+
+input[type="text"] {
+  font-family: 'ArcadeClassic', sans-serif;
+  font-size: 2rem;
+  color: yellow;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.submit-button {
+  width: 6rem;
+  align-self: flex-start;
+  margin-left: 15rem;
 }

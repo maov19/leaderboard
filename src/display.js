@@ -9,7 +9,7 @@ const display = async (url) => {
     return;
   }
   const recentScores = document.getElementById('recent-scores');
-  const userAndScore = result.map((item) => `<li>${item.user}: ${item.score}</li>`);
+  const userAndScore = result.map((item) => `<li><p>${item.user}</p><p>${item.score}</p></li>`);
   recentScores.innerHTML = userAndScore.join('');
 };
 
